@@ -36,7 +36,7 @@ This project presents a classic two-player card game called "War," implemented i
 
 ## Credit
 
-This project was inspired by Cory Althoff's implementation of the "War" card game in Python. To view Cory's version of the game, you can visit this [link](http://tinyurl.com/ho7364a).
+This project was inspired by Cory Althoff, the author of "The Self-taught Programmer". To view Cory's version of the game, you can visit this [link](http://tinyurl.com/ho7364a).
 
 ## Usage
 
