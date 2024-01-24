@@ -2,6 +2,8 @@
 
 **Project Completion Date:** December 2023
 
+![War Screenshot](war_screenshot.png)
+
 ## Overview
 
 This project presents a classic two-player card game called "War," implemented in both Java and Python. The primary goal of this project is to demonstrate proficiency in object-oriented programming (OOP) by designing and implementing game mechanics using custom classes.
@@ -34,7 +36,7 @@ This project presents a classic two-player card game called "War," implemented i
 
 ## Credit
 
-This project was inspired by Cory Althoff's implementation of the "War" card game in Python. To view Cory's version of the game, you can visit [this link](http://tinyurl.com/h9q2cpc).
+This project was inspired by Cory Althoff's implementation of the "War" card game in Python. To view Cory's version of the game, you can visit this [link](http://tinyurl.com/ho7364a).
 
 ## Usage
 
