@@ -4,11 +4,13 @@
 
 ![War Screenshot](war_screenshot.png)
 
-## Project Overview
+## Overview
 
-This project presents a classic two-player card game called "War," implemented in both Java and Python. The primary goal of this project is to demonstrate proficiency in object-oriented programming (OOP) by designing and implementing game mechanics using custom classes.
+"War" is a classic two-player card game that is simple yet exciting. The objective is to win the most number of rounds!
 
 ## Project Details
+
+I have implemented this game in both Java and Python, so feel free to try either version.
 
 ### Java Version
 
@@ -54,8 +56,6 @@ This project presents a classic two-player card game called "War," implemented i
 
 - A standard 52-card deck is divided equally between two players.
 - Each player receives their stack of cards, face down.
-
-### Gameplay:
 
 **The Deal:**
 
