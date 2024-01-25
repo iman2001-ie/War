@@ -1,18 +1,18 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import Card.java;
-import Deck.java;
-import Player.java;
 
 
 public class Game {
     private Deck deck = new Deck();
     private Player p1;
     private Player p2;
+    private Scanner scanner;
+    private int round = 1;
 
     public Game() {
-        this.explainGame();
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welome to the War Card Game!!!\r\n" + //
+                "------------------------------\n");
+        this.scanner = new Scanner(System.in);
         System.out.print("Please enter player 1's name: ");
         String name1 = scanner.nextLine();
         System.out.print("Please enter player 2's name: ");
@@ -22,69 +22,14 @@ public class Game {
         this.p2 = new Player(name2);
     }
 
-    public void explainGame() {
-        String note = """
-                Welome to the War card-game!!!
-                ------------------------------
-                
-                Game Overview:
-                
-                War is a classic two-player card game that is simple yet exciting. 
-                The objective is to win the most number of rounds!
-                
-                
-                1. Pre-game Notes:
-                
-                   - The Ace is the highest-ranked card in this game.
-                   - The suits are ranked differently as well. Here are the suits from 
-                     strongest to weakest:
-                     
-                          clubs - 4 points
-                          diamonds - 3 points
-                          hearts - 2 points
-                          spades - 1 point
-                      
-                
-                2. Setup:
-                
-                   - A standard 52-card deck is divided equally between two players.
-                   - Each player receives their own stack of cards, face down.
-                
-                
-                
-                3. Gameplay:
-                
-                   The Deal:
-                   
-                   - Players simultaneously reveal the top card of their stack.
-                   - The player with the higher-ranked card (the higher-number card) 
-                     wins that round of the game. 
-                     
-                   Ties("War"):
-                   
-                   - If the revealed cards are of equal rank, a "war" is declared.
-                   - Then, the player with the higher-ranked suit wins that round of the game.
-                   
-                   Winning the Game:
-                   
-                   - The game continues until there are no more cards left.
-                   - The player with the most number of won rounds, wins.
-                   
-                   
-                   
-                Enjoy the classic game of War! May luck be with you!
-                """;
-    
-        System.out.println(note);
-    }
-
     private void wins(Player winner) {
         System.out.println(winner.getName() + " wins this round!");
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        this.round++;
     }
 
     private void draw(String p1Name, Card p1Card, String p2Name, Card p2Card) {
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("\nRound " + this.round + ":");
         System.out.println(p1Name + " drew " + p1Card + "; " + p2Name + " drew " + p2Card + ".");
     }
 
@@ -94,8 +39,7 @@ public class Game {
         System.out.println("----------------");
 
         while (cards.size() >= 2) {
-            System.out.print("\nPress q to quit. Press any other key to play:\n");
-            Scanner scanner = new Scanner(System.in);
+            System.out.print("Press q to quit. Press any other key to play: ");
             String response = scanner.nextLine();
             if (response.equals("q")) {
                 break;
@@ -117,9 +61,11 @@ public class Game {
         String win = winner(p1, p2);
 
         if (win == null) {
-            System.out.println("War is over. It was a tie!");
+            System.out.println("\nWar is over. It was a tie!\n" + //
+                    "");
         } else {
-            System.out.println("War is over. " + win + " wins!!!");
+            System.out.println("\nWar is over. " + win + " wins!!!\n" + //
+                    "");
         }
     }
 
@@ -136,5 +82,6 @@ public class Game {
     public static void main(String[] args) {
         Game game = new Game();
         game.playGame();
+        game.scanner.close();
     }
 }

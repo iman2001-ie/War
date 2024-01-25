@@ -1,14 +1,9 @@
-import Card.java;
-
-
 public class Player {
     private int wins;
-    private Card card;
     private String name;
 
     public Player(String name) {
         this.wins = 0;
-        this.card = null;
         this.name = name;
     }
 
