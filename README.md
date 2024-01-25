@@ -4,7 +4,7 @@
 
 ![War Screenshot](war_screenshot.png)
 
-## Overview
+## Project Overview
 
 This project presents a classic two-player card game called "War," implemented in both Java and Python. The primary goal of this project is to demonstrate proficiency in object-oriented programming (OOP) by designing and implementing game mechanics using custom classes.
 
@@ -33,6 +33,44 @@ This project presents a classic two-player card game called "War," implemented i
   - Players can draw cards.
   - Resolve ties ("War") following the game's rules.
   - Determine the overall winner.
+
+**Game Overview:**
+
+"War" is a classic two-player card game that is simple yet exciting. The objective is to win the most number of rounds!
+
+## Rules and Gameplay
+
+### Pre-game Notes:
+
+- The Ace is the highest-ranked card in this game.
+- The suits are ranked differently as well. Here are the suits from strongest to weakest:
+  
+  - Clubs - 4 points
+  - Diamonds - 3 points
+  - Hearts - 2 points
+  - Spades - 1 point
+
+### Setup:
+
+- A standard 52-card deck is divided equally between two players.
+- Each player receives their stack of cards, face down.
+
+### Gameplay:
+
+**The Deal:**
+
+- Players simultaneously reveal the top card of their stack.
+- The player with the higher-ranked card (the higher-number card) wins that round of the game.
+
+**Ties ("War"):**
+
+- If the revealed cards are of equal rank, a "war" is declared.
+- Then, the player with the higher-ranked suit wins that round of the game.
+
+**Winning the Game:**
+
+- The game continues until there are no more cards left.
+- The player with the most won rounds wins the game.
 
 ## Credit
 
