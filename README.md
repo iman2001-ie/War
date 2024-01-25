@@ -36,10 +36,6 @@ I have implemented this game in both Java and Python, so feel free to try either
   - Resolve ties ("War") following the game's rules.
   - Determine the overall winner.
 
-**Game Overview:**
-
-"War" is a classic two-player card game that is simple yet exciting. The objective is to win the most number of rounds!
-
 ## Rules and Gameplay
 
 ### Pre-game Notes:
@@ -56,6 +52,8 @@ I have implemented this game in both Java and Python, so feel free to try either
 
 - A standard 52-card deck is divided equally between two players.
 - Each player receives their stack of cards, face down.
+
+### Gameplay:
 
 **The Deal:**
 
